@@ -1,5 +1,5 @@
 # Prompt: https://adventofcode.com/2019/day/1
-
+#!/usr/bin/python3
 sum_of_fuel = 0
 mass_divider = 3
 mass_subtractor = 2
@@ -35,9 +35,10 @@ print("How many modules will your space ship have?")
 number_of_modules = get_number()
 
 for module in range(number_of_modules):
-    print("What is the weight of module number {}\n".format(module + 1))
+    print("\nWhat is the weight of module number {}\n".format(module + 1))
     module_weight = get_number()
     module_fuel_req = fuel_calculator(module_weight)
     fuel_per_module.append(module_fuel_req)
 
-print("The total required fuel for this trip is {}".format(int(sum(fuel_per_module))))
+print("The total required fuel for this trip is {}".format(
+    int(sum(fuel_per_module))))
