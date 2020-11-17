@@ -34,6 +34,8 @@ def get_number():
 print("How many modules will your space ship have?")
 number_of_modules = get_number()
 
+#testing git_python
+
 for module in range(number_of_modules):
     print("\nWhat is the weight of module number {}\n".format(module + 1))
     module_weight = get_number()
