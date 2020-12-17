@@ -4,9 +4,9 @@ def divider(n, k):
     while multiplied < n:
         multiplied = k * i
         i += 1
-    multiplied = multiplied - k
+    quotient = multiplied - k
     remainder = n % k
-    return (multiplied, remainder)
+    return (quotient, remainder)
 
 
 print(divider(5, 2))
